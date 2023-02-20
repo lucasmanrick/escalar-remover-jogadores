@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Exercicio</title>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+      <nav class="start-buttons-area">
+        <button class="button-style " id="newPlayerAba" onclick="addPlayerAba()">Adicionar Jogador</button>
+        <button class="removePlayerAba button-style" onclick="removePlayerAba()">Remover Jogador</button>
+      </nav>
+    </header>
+    <br>
+
+      <section id="add-players" style="display: none;" class="main-area">
+          <div class="add-players-style">
+            <h3>Adicionar Jogador</h3>
+            <br>
+            <label for="player-name">Nome do jogador:</label> 
+            <input type="text" id="player-name" class="inputStyle" required placeholder="ex:Lucas" autofocus>
+            <br>
+            <label for="player-position">posição do jogador:</label>
+            <input type="text" id="player-position" class="inputStyle" required placeholder="ex: Atacante">
+            <br>
+            <label for="player-shirtadd">camisa do jogador:</label>
+            <input type="text" id="player-shirtadd" class="inputStyle" required placeholder="ex: 10">
+            <br>
+            <button class="button-bottom" onclick="climbPlayer()">Escalar</button> 
+          </div>
+      </section>
+      <section id="remove-players" style="display: none;" class="main-area">
+          <div class ="remove-players-style">
+            <h3>Remover Jogador</h3>
+            <br>
+            <label for="player-shirt">Camisa do jogador que será removido:</label>
+            <input type="text" id="player-shirt" class="inputStyle" required>
+            <br>
+            <button class="button-bottom" onclick="removePlayer()" >remover</button>
+          </div>
+      </section>
+
+      <h2>Jogadores Escalados</h2>
+
+      <section id="insertText" class="text-climb-area">
+
+      </section>
+
+
+  </div>
+
+
+</body>
+</html>
